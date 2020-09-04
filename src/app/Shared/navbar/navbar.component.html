@@ -1,0 +1,95 @@
+<div class="bar">
+  <mat-toolbar>
+    <a href="#" mat-button [matMenuTriggerFor]="menu" class="electronics">
+      Electronics
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Mobiles</button>
+        <button mat-menu-item>Smart Watches</button>
+        <button mat-menu-item>Laptops</button>
+        <button mat-menu-item>Desktop PC</button>
+        <button mat-menu-item>Gaming Accessories</button>
+        <button mat-menu-item>Computer Accessories</button>
+        <button mat-menu-item>Speakers</button>
+        <button mat-menu-item>Cameras</button>
+      </mat-menu>
+    </a>
+
+    <a href="#" mat-button [matMenuTriggerFor]="tv" class="tv">
+      TVs & Appliances
+      <mat-menu #tv="matMenu">
+        <button mat-menu-item>Television</button>
+        <button mat-menu-item>Washing Machine</button>
+        <button mat-menu-item>Air Conditioners</button>
+        <button mat-menu-item>Kitchen Appliances</button>
+        <button mat-menu-item>Smart & Ultra HD</button>
+        <button mat-menu-item>New Launches</button>
+        <button mat-menu-item>Refrigetators</button>
+        <button mat-menu-item>Top Brands</button>
+      </mat-menu>
+    </a>
+
+    <a href="#" mat-button [matMenuTriggerFor]="men" class="men">
+      Men
+      <mat-menu #men="matMenu">
+        <button mat-menu-item>Footwear</button>
+        <button mat-menu-item>Men's Grooming</button>
+        <button mat-menu-item>Top wear</button>
+        <button mat-menu-item>Bottom wear</button>
+        <button mat-menu-item>Suits & Blazers</button>
+        <button mat-menu-item>Winter wear</button>
+        <button mat-menu-item>Watches</button>
+        <button mat-menu-item>Caps</button>
+      </mat-menu>
+    </a>
+
+    <a href="#" mat-button [matMenuTriggerFor]="women" class="women">
+      Women
+      <mat-menu #women="matMenu">
+        <button mat-menu-item>Footwear</button>
+        <button mat-menu-item>Women's Grooming</button>
+        <button mat-menu-item>Top wear</button>
+        <button mat-menu-item>Bottom wear</button>
+        <button mat-menu-item>Suits & Blazers</button>
+        <button mat-menu-item>Winter wear</button>
+      </mat-menu>
+    </a>
+
+    <a href="#" mat-button [matMenuTriggerFor]="kids" class="baby">
+      Baby & Kids
+      <mat-menu #kids="matMenu">
+        <button mat-menu-item>Footwear</button>
+        <button mat-menu-item>Top wear</button>
+        <button mat-menu-item>Bottom wear</button>
+        <button mat-menu-item>Suits & Blazers</button>
+        <button mat-menu-item>Winter wear</button>
+        <button mat-menu-item>Caps</button>
+      </mat-menu>
+    </a>
+
+    <a href="#" mat-button [matMenuTriggerFor]="furniture" class="furniture">
+      Home & Furniture
+      <mat-menu #furniture="matMenu">
+        <button mat-menu-item>Kitchen, Cookware & Serveware</button>
+        <button mat-menu-item>Bed Room Furniture</button>
+        <button mat-menu-item>Furnishing</button>
+        <button mat-menu-item>Home Decor</button>
+        <button mat-menu-item>Tableware</button>
+        <button mat-menu-item>Cleaning Supplies</button>
+      </mat-menu>
+    </a>
+
+    <a href="#" mat-button [matMenuTriggerFor]="sports" class="sports">
+      Sports,Books & More
+      <mat-menu #sports="matMenu">
+        <button mat-menu-item>Sports</button>
+        <button mat-menu-item>Exercise Fitness</button>
+        <button mat-menu-item>Food Essentials</button>
+        <button mat-menu-item>Books</button>
+        <button mat-menu-item>Music</button>
+        <button mat-menu-item>Stationery</button>
+      </mat-menu>
+    </a>
+
+    <a href="#" mat-button class="offer"><span>Offer Zone</span></a>
+  </mat-toolbar>
+</div>
