@@ -1,0 +1,42 @@
+/* apply css too mat toolbar: */
+mat-toolbar {
+  background-color: #2874f0;
+  color: white;
+}
+/* apply css too close btn: */
+.close-btn {
+  border: 1px solid white;
+}
+/* apply css too form: */
+.form {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+}
+/* apply css too user: */
+.user {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+/* apply user too password: */
+.password {
+  width: 100%;
+}
+/* apply css too login-btn: */
+.login-btn {
+  width: 100%;
+}
+/* apply css too register-link: */
+.register-link {
+  padding: 50px;
+}
+/* change the color in hovor: */
+.register-link:hover {
+  color: blue;
+  cursor: pointer;
+}
+/* apply css too div link: */
+.link {
+  margin-top: 20px;
+}

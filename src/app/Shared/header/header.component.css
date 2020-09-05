@@ -8,10 +8,13 @@
   width: 110px;
   margin-right: 20px;
 }
-/* APPLY CSS TOO THE ANCHOR TAG: */
-a {
-  color: white;
+/* apply css too the login-button: */
+.login-btn {
+  color: blue;
+  font-weight: bold;
+  background-color: white;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -57,11 +60,13 @@ ul > li > button {
 .more {
   font-family: Roboto, Arial, sans-serif;
   font-size: 18px;
+  color: white;
 }
 /* apply css too the cart anchor tag: */
 .cart {
   font-family: Roboto, Arial, sans-serif;
   font-size: 18px;
+  color: white;
 }
 /* APPLY CSS TOO SEARCH INPUT: */
 #SearchInput {

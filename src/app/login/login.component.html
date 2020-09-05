@@ -1,3 +1,30 @@
-<p>
-  login works!
-</p>
+<!-- implement Toolbar: -->
+<mat-toolbar class="primary">
+  Login
+  <!-- use flex-spacer class for spacing bitween text and button: -->
+  <span class="flex-spacer"></span>
+  <button class="close-btn" mat-button mat-dialog-close>&times;</button>
+</mat-toolbar>
+
+<!-- implement login form: -->
+<form class="form">
+  <mat-form-field class="user">
+    <mat-label>Enter Email/Mobile number</mat-label>
+    <input matInput type="text" />
+  </mat-form-field>
+
+  <mat-form-field class="password">
+    <mat-label>Enter Password</mat-label>
+    <input matInput type="password" />
+  </mat-form-field>
+
+  <!-- implement login button: -->
+  <button mat-raised-button class="login-btn" color="warn">Login</button>
+
+  <!-- implement register link: -->
+  <div class="link">
+    <a class="register-link" (click)="openRegisterForm()">
+      New to Flipkart? Create an account
+    </a>
+  </div>
+</form>
