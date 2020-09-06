@@ -1,0 +1,6 @@
+/* apply css too the main-container: */
+.card-container {
+  margin-top: 10px;
+  height: 100%;
+  width: 80%;
+}

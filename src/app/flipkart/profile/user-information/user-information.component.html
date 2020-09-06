@@ -1,0 +1,115 @@
+<div class="card-container">
+  <mat-card class="main-card">
+    <form>
+      <!-- implement name and sername: -->
+      <div>
+        <mat-card-header fxFlex>Personal Information</mat-card-header>
+        <mat-card-header fxFlex="75%"><a href="#">Edit</a></mat-card-header>
+      </div>
+      <mat-card-content class="names">
+        <div class="form-group col-md-3" fxFlex>
+          <input
+            type="text"
+            class="form-control"
+            name="sername"
+            placeholder="Sername"
+          />
+        </div>
+
+        <div class="form-group col-md-3" fxFlex>
+          <input
+            type="text"
+            class="form-control"
+            name="name"
+            placeholder="Name"
+          />
+        </div>
+      </mat-card-content>
+      <!-- implement radio: -->
+      <mat-card-content class="radio">
+        <mat-card-header>Your Gender</mat-card-header>
+        <mat-radio-group class="col-md-3">
+          <mat-radio-button value="male">Male</mat-radio-button>
+          <mat-radio-button value="female" class="col-md-3">
+            Female
+          </mat-radio-button>
+        </mat-radio-group>
+      </mat-card-content>
+      <!-- implement email: -->
+      <div class="email-header">
+        <mat-card-header fxFlex>Email Address</mat-card-header>
+        <mat-card-header fxFlex="5%"><a href="#">Edit</a></mat-card-header>
+        <mat-card-header fxFlex="70%">
+          <a href="#">Change Password</a>
+        </mat-card-header>
+      </div>
+      <mat-card-content class="email-input">
+        <div class="col-md-3">
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            class="form-control"
+          />
+        </div>
+      </mat-card-content>
+      <!-- implement mobile number: -->
+      <div>
+        <mat-card-header fxFlex>Mobile Number</mat-card-header>
+        <mat-card-header fxFlex="75%"><a href="#">Edit</a></mat-card-header>
+      </div>
+
+      <mat-card-content class="mobile-input">
+        <div class="col-md-3">
+          <input
+            type="number"
+            name="number"
+            placeholder="Mobile Number"
+            class="form-control"
+          />
+        </div>
+      </mat-card-content>
+
+      <mat-card-content class="info">
+        <div class="col-md-10">
+          <mat-card-title>FAQs</mat-card-title>
+          <mat-card-header>
+            What happens when I update my email address (or mobile number)?
+          </mat-card-header>
+          <mat-card-subtitle>
+            Your login email id (or mobile number) changes, likewise. You'll
+            receive all your account related communication on your updated email
+            address (or mobile number).
+          </mat-card-subtitle>
+
+          <mat-card-header>
+            When will my Flipkart account be updated with the new email address
+            (or mobile number)?
+          </mat-card-header>
+          <mat-card-subtitle>
+            It happens as soon as you confirm the verification code sent to your
+            email (or mobile) and save the changes.
+          </mat-card-subtitle>
+
+          <mat-card-header>
+            What happens to my existing Flipkart account when I update my email
+            address (or mobile number)?
+          </mat-card-header>
+          <mat-card-subtitle>
+            Updating your email address (or mobile number) doesn't invalidate
+            your account. Your account remains fully functional. You'll continue
+            seeing your Order history, saved information and personal details.
+          </mat-card-subtitle>
+
+          <mat-card-header>
+            Does my Seller account get affected when I update my email address?
+          </mat-card-header>
+          <mat-card-subtitle>
+            Flipkart has a 'single sign-on' policy. Any changes will reflect in
+            your Seller account also.
+          </mat-card-subtitle>
+        </div>
+      </mat-card-content>
+    </form>
+  </mat-card>
+</div>

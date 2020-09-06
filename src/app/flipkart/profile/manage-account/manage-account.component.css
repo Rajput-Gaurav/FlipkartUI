@@ -1,0 +1,21 @@
+/* apply css too the card-one */
+.card-container {
+  margin-top: 10px;
+  height: 100%;
+}
+.name-card {
+  width: 300px;
+  height: 100px;
+}
+/* apply css too the second-card */
+.manage-card {
+  width: 300px;
+  height: 70%;
+  margin-top: 20px;
+}
+/* apply css too the third-card */
+.help-card {
+  width: 300px;
+  height: 13%;
+  margin-top: 20px;
+}

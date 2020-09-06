@@ -9,9 +9,9 @@ import { MatMenuModule } from "@angular/material/menu";
 import { MatDialogModule } from "@angular/material/dialog";
 import { MatInputModule } from "@angular/material/input";
 
-// import NgbModule for implementing slider:
-import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
-
+// import flipkart module:
+import { FlipkartModule } from "./flipkart/flipkart.module";
+import { AppRoutingModule } from "./app-routing.module";
 // components:
 import { AppComponent } from "./app.component";
 import { LoginComponent } from "./login/login.component";
@@ -21,7 +21,7 @@ import { FooterComponent } from "./Shared/footer/footer.component";
 import { NavbarComponent } from "./Shared/navbar/navbar.component";
 import { PageNotFoundComponent } from "./Shared/page-not-found/page-not-found.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { SliderComponent } from "./Shared/slider/slider.component";
+// import { SliderComponent } from "./Shared/slider/slider.component";
 
 @NgModule({
   declarations: [
@@ -32,7 +32,7 @@ import { SliderComponent } from "./Shared/slider/slider.component";
     FooterComponent,
     NavbarComponent,
     PageNotFoundComponent,
-    SliderComponent,
+    // SliderComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,9 +41,10 @@ import { SliderComponent } from "./Shared/slider/slider.component";
     MatButtonModule,
     MatToolbarModule,
     MatMenuModule,
-    NgbModule,
     MatDialogModule,
     MatInputModule,
+    FlipkartModule,
+    AppRoutingModule,
   ],
   providers: [],
   entryComponents: [LoginComponent, RegisterComponent],
