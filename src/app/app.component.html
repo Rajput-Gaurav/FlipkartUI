@@ -1,11 +1,15 @@
-<div class="app-container">
+<div class="app-container" fxLayout>
   <!-- import header layout: -->
   <app-header></app-header>
   <app-navbar></app-navbar>
 </div>
-
+<!-- implement router-outlet -->
 <div class="row">
   <div class="col">
     <router-outlet></router-outlet>
   </div>
+</div>
+<!-- import footer: -->
+<div fxLayout>
+  <app-footer></app-footer>
 </div>

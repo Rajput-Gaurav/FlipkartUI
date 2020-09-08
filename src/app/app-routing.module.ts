@@ -11,11 +11,9 @@ import { PageNotFoundComponent } from "./Shared/page-not-found/page-not-found.co
 
 // create an array of route:
 const routes: Routes = [
-  { path: "", redirectTo: "/home", pathMatch: "full" }, //redirect too login page:
+  // { path: "", redirectTo: "/home", pathMatch: "full" }, //redirect too login page:
   { path: "home", component: FlipkartComponent },
   { path: "profile", component: ProfileComponent },
-  { path: "login", component: LoginComponent },
-  { path: "register", component: RegisterComponent },
   { path: "**", component: PageNotFoundComponent },
 ];
 @NgModule({

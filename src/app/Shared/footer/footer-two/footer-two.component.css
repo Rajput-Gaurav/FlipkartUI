@@ -1,0 +1,30 @@
+/* apply css too the main footer2 on section tag: */
+#footer2 {
+  border-top: 1px solid #878787;
+  padding: 30px;
+  background-color: black;
+}
+/* apply css too the container class: */
+.container {
+  max-width: 1321px;
+}
+/* apply css too the visa id: */
+#visa {
+  cursor: pointer;
+}
+/* apply css too the all column class: */
+.col {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0px 10px 0px 10px;
+  color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  font-family: Roboto, Arial, sans-serif;
+  letter-spacing: 0;
+  font-size: 14px;
+
+  color: white;
+  line-height: 1.4;
+}

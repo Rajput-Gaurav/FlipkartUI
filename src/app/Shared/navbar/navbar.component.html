@@ -1,95 +1,173 @@
-<div class="bar">
-  <mat-toolbar>
-    <a href="#" mat-button [matMenuTriggerFor]="menu" class="electronics">
-      Electronics
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item>Mobiles</button>
-        <button mat-menu-item>Smart Watches</button>
-        <button mat-menu-item>Laptops</button>
-        <button mat-menu-item>Desktop PC</button>
-        <button mat-menu-item>Gaming Accessories</button>
-        <button mat-menu-item>Computer Accessories</button>
-        <button mat-menu-item>Speakers</button>
-        <button mat-menu-item>Cameras</button>
-      </mat-menu>
-    </a>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <!-- Electronics Menu: -->
+      <li ngbDropdown class="nav-item dropdown electric-items">
+        <a
+          ngbDropdownToggle
+          class="nav-link dropdown-toggle electronics"
+          id="dropdown01"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          >Electronics</a
+        >
+        <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" routerLink="/mobiles">Mobiles</a>
+          <a class="dropdown-item" href="#">Smart Watches</a>
+          <a class="dropdown-item" href="#">Laptops</a>
+          <a class="dropdown-item" href="#">Desktop PC</a>
+          <a class="dropdown-item" href="#">Gaming Accessories</a>
+          <a class="dropdown-item" href="#">Computer Accessories</a>
+          <a class="dropdown-item" href="#">Speakers</a>
+          <a class="dropdown-item" href="#">Cameras</a>
+        </div>
+      </li>
 
-    <a href="#" mat-button [matMenuTriggerFor]="tv" class="tv">
-      TVs & Appliances
-      <mat-menu #tv="matMenu">
-        <button mat-menu-item>Television</button>
-        <button mat-menu-item>Washing Machine</button>
-        <button mat-menu-item>Air Conditioners</button>
-        <button mat-menu-item>Kitchen Appliances</button>
-        <button mat-menu-item>Smart & Ultra HD</button>
-        <button mat-menu-item>New Launches</button>
-        <button mat-menu-item>Refrigetators</button>
-        <button mat-menu-item>Top Brands</button>
-      </mat-menu>
-    </a>
+      <!-- Tv-appliances Menu: -->
+      <li ngbDropdown class="nav-item dropdown tv-appliances">
+        <a
+          ngbDropdownToggle
+          class="nav-link dropdown-toggle tv"
+          id="dropdown01"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          >TVs & Appliances</a
+        >
+        <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="#">Television</a>
+          <a class="dropdown-item" href="#">Washing Machine</a>
+          <a class="dropdown-item" href="#">Air Conditioners</a>
+          <a class="dropdown-item" href="#">Kitchen Appliances</a>
+          <a class="dropdown-item" href="#">Smart & Ultra HD</a>
+          <a class="dropdown-item" href="#">New Launches</a>
+          <a class="dropdown-item" href="#">Refrigetators</a>
+        </div>
+      </li>
 
-    <a href="#" mat-button [matMenuTriggerFor]="men" class="men">
-      Men
-      <mat-menu #men="matMenu">
-        <button mat-menu-item>Footwear</button>
-        <button mat-menu-item>Men's Grooming</button>
-        <button mat-menu-item>Top wear</button>
-        <button mat-menu-item>Bottom wear</button>
-        <button mat-menu-item>Suits & Blazers</button>
-        <button mat-menu-item>Winter wear</button>
-        <button mat-menu-item>Watches</button>
-        <button mat-menu-item>Caps</button>
-      </mat-menu>
-    </a>
+      <!-- Man's Menu: -->
+      <li ngbDropdown class="nav-item dropdown men's">
+        <a
+          ngbDropdownToggle
+          class="nav-link dropdown-toggle men"
+          id="dropdown01"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          >Men</a
+        >
+        <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="#">Men's Grooming</a>
+          <a class="dropdown-item" href="#">Top wear</a>
+          <a class="dropdown-item" href="#">Bottom wear</a>
+          <a class="dropdown-item" href="#">Suits & Blazers</a>
+          <a class="dropdown-item" href="#">Winter wear</a>
+          <a class="dropdown-item" href="#">Footwear</a>
+          <a class="dropdown-item" href="#">Caps</a>
+          <a class="dropdown-item" href="#">Watches</a>
+        </div>
+      </li>
 
-    <a href="#" mat-button [matMenuTriggerFor]="women" class="women">
-      Women
-      <mat-menu #women="matMenu">
-        <button mat-menu-item>Footwear</button>
-        <button mat-menu-item>Women's Grooming</button>
-        <button mat-menu-item>Top wear</button>
-        <button mat-menu-item>Bottom wear</button>
-        <button mat-menu-item>Suits & Blazers</button>
-        <button mat-menu-item>Winter wear</button>
-      </mat-menu>
-    </a>
+      <!-- Women Menu: -->
+      <li ngbDropdown class="nav-item dropdown women's">
+        <a
+          ngbDropdownToggle
+          class="nav-link dropdown-toggle women"
+          id="dropdown01"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          >Women</a
+        >
+        <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="#">Women's Grooming</a>
+          <a class="dropdown-item" href="#">Top wear</a>
+          <a class="dropdown-item" href="#">Bottom wear</a>
+          <a class="dropdown-item" href="#">Suits & Blazers</a>
+          <a class="dropdown-item" href="#">Winter wear</a>
+          <a class="dropdown-item" href="#">Footwear</a>
+          <a class="dropdown-item" href="#">Caps</a>
+          <a class="dropdown-item" href="#">Watches</a>
+        </div>
+      </li>
 
-    <a href="#" mat-button [matMenuTriggerFor]="kids" class="baby">
-      Baby & Kids
-      <mat-menu #kids="matMenu">
-        <button mat-menu-item>Footwear</button>
-        <button mat-menu-item>Top wear</button>
-        <button mat-menu-item>Bottom wear</button>
-        <button mat-menu-item>Suits & Blazers</button>
-        <button mat-menu-item>Winter wear</button>
-        <button mat-menu-item>Caps</button>
-      </mat-menu>
-    </a>
+      <!-- kids Menu: -->
+      <li ngbDropdown class="nav-item dropdown kid's">
+        <a
+          ngbDropdownToggle
+          class="nav-link dropdown-toggle kids"
+          id="dropdown01"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          >Kids</a
+        >
+        <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="#">Top wear</a>
+          <a class="dropdown-item" href="#">Bottom wear</a>
+          <a class="dropdown-item" href="#">Suits & Blazers</a>
+          <a class="dropdown-item" href="#">Winter wear</a>
+          <a class="dropdown-item" href="#">Footwear</a>
+          <a class="dropdown-item" href="#">Caps</a>
+          <a class="dropdown-item" href="#">Watches</a>
+        </div>
+      </li>
 
-    <a href="#" mat-button [matMenuTriggerFor]="furniture" class="furniture">
-      Home & Furniture
-      <mat-menu #furniture="matMenu">
-        <button mat-menu-item>Kitchen, Cookware & Serveware</button>
-        <button mat-menu-item>Bed Room Furniture</button>
-        <button mat-menu-item>Furnishing</button>
-        <button mat-menu-item>Home Decor</button>
-        <button mat-menu-item>Tableware</button>
-        <button mat-menu-item>Cleaning Supplies</button>
-      </mat-menu>
-    </a>
+      <!--furniture  Menu: -->
+      <li ngbDropdown class="nav-item dropdown furniture's">
+        <a
+          ngbDropdownToggle
+          class="nav-link dropdown-toggle furniture"
+          id="dropdown01"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          >Home & Furniture</a
+        >
+        <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="#">Kitchen, Cookware</a>
+          <a class="dropdown-item" href="#">Tableware</a>
+          <a class="dropdown-item" href="#">Cleaning Supplies</a>
+          <a class="dropdown-item" href="#">Home Decor</a>
+          <a class="dropdown-item" href="#">Furnishing</a>
+          <a class="dropdown-item" href="#">Bed Room Furniture</a>
+        </div>
+      </li>
 
-    <a href="#" mat-button [matMenuTriggerFor]="sports" class="sports">
-      Sports,Books & More
-      <mat-menu #sports="matMenu">
-        <button mat-menu-item>Sports</button>
-        <button mat-menu-item>Exercise Fitness</button>
-        <button mat-menu-item>Food Essentials</button>
-        <button mat-menu-item>Books</button>
-        <button mat-menu-item>Music</button>
-        <button mat-menu-item>Stationery</button>
-      </mat-menu>
-    </a>
+      <!-- sports Menu: -->
+      <li ngbDropdown class="nav-item dropdown sport's">
+        <a
+          ngbDropdownToggle
+          class="nav-link dropdown-toggle sports"
+          id="dropdown01"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          >Sports,Books & More</a
+        >
+        <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="#">Sports</a>
+          <a class="dropdown-item" href="#">Exercise Fitness</a>
+          <a class="dropdown-item" href="#">Food Essentials</a>
+          <a class="dropdown-item" href="#">Books</a>
+          <a class="dropdown-item" href="#">Music</a>
+          <a class="dropdown-item" href="#">Stationery</a>
+        </div>
+      </li>
 
-    <a href="#" mat-button class="offer"><span>Offer Zone</span></a>
-  </mat-toolbar>
-</div>
+      <!-- offers: -->
+      <li ngbDropdown class="nav-item dropdown offer's">
+        <a
+          ngbDropdownToggle
+          class="nav-link dropdown-toggle offer"
+          id="dropdown01"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          >Offer Zone</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>

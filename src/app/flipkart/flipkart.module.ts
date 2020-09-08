@@ -21,12 +21,14 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { SliderComponent } from "../Shared/slider/slider.component";
 import { FlipkartComponent } from "./flipkart.component";
 import { ProductComponent } from "./product/product.component";
-import { ProductListComponent } from "./product-list/product-list.component";
-import { ProductItemComponent } from "./product-list/product-item/product-item.component";
+import { ProductListComponent } from "./product/product-list/product-list.component";
+import { ProductItemComponent } from "./product/product-list/product-item/product-item.component";
 import { ProductDetailsComponent } from "./product-details/product-details.component";
 import { ProfileComponent } from "./profile/profile.component";
 import { ManageAccountComponent } from "./profile/manage-account/manage-account.component";
 import { UserInformationComponent } from "./profile/user-information/user-information.component";
+import { MobilesComponent } from './product/product-list/mobiles/mobiles.component';
+import { MobilesDetailComponent } from './product-details/mobiles-detail/mobiles-detail.component';
 
 @NgModule({
   imports: [
@@ -53,6 +55,8 @@ import { UserInformationComponent } from "./profile/user-information/user-inform
     ProfileComponent,
     ManageAccountComponent,
     UserInformationComponent,
+    MobilesComponent,
+    MobilesDetailComponent,
   ],
   // export only one component which is main component:
   exports: [FlipkartComponent],

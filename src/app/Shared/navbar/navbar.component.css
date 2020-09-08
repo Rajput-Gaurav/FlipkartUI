@@ -1,7 +1,38 @@
-mat-toolbar > a {
-  width: 100%;
-  margin: 10px;
-  text-align: center;
-  line-height: 60px;
-  font-size: 20px;
+.navbar {
+  color: black;
+  background-color: white;
+}
+.navbar-nav {
+  margin-left: 18%;
+}
+
+/* apply css too the anchor tag class: */
+.electronics {
+  cursor: pointer;
+}
+/* apply css too the anchor tag class: */
+.tv {
+  cursor: pointer;
+}
+/* apply css too the anchor tag class: */
+.men {
+  cursor: pointer;
+}
+/* apply css too the anchor tag class: */
+.women {
+  cursor: pointer;
+}
+/* apply css too the anchor tag class: */
+.kids {
+  cursor: pointer;
+}
+/* apply css too the anchor tag class: */
+.furniture {
+  cursor: pointer;
+}
+.sports {
+  cursor: pointer;
+}
+.offer {
+  cursor: pointer;
 }
