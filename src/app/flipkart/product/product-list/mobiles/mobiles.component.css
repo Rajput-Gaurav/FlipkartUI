@@ -1,0 +1,22 @@
+/* apply css too the div main-container: */
+.main-container {
+  width: 100%;
+  /* border: 1px solid black; */
+}
+/* apply css too the second div class */
+.pull-left {
+  /* border: 1px solid black; */
+
+  margin: 2px;
+  padding: 2px;
+}
+/* apply css on product images: */
+.image {
+  height: 165px;
+  width: 180px;
+}
+/* apply css too the card: */
+mat-card {
+  width: 430px;
+  height: 260px;
+}

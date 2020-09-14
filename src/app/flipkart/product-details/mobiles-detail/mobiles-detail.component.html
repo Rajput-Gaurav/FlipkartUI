@@ -1,3 +1,38 @@
-<p>
-  mobiles-detail works!
-</p>
+<!-- implement Detail component: -->
+
+<div *ngIf="mobile" class="main-container" fxLayout>
+  <mat-card class="card" fxLayout>
+    <!-- image div: -->
+    <div class="img-div" fxFlex="40%">
+      <img class="img-thumbnail" [src]="mobile.image" [alt]="mobile.name" />
+      <button mat-raised-button class="cart">ADD TO CART</button>
+      <button mat-raised-button class="buy">BUY NOW</button>
+    </div>
+    <!-- description div: -->
+    <div class="description-div">
+      <mat-card-title>{{ mobile.name }}</mat-card-title>
+      <mat-card-subtitle>{{ mobile.description }}</mat-card-subtitle>
+      <span>Ratings: {{ mobile.avg }} & </span>
+      <span>Reviews: {{ mobile.reviewCounter }}</span
+      ><br />
+      <span class="price"> {{ mobile.price | currency }}</span
+      ><br />
+      <span class="offers">Available offers</span><br />
+      <span>Special PriceExtra ₹3000 off(price inclusive of discount)</span
+      ><a routerLink="#"> T&C</a><br />
+      <span
+        >Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit Card</span
+      ><a routerLink="#"> T&C</a><br />
+      <span>Get Google Nest Mini Charcoal at ₹1999</span
+      ><a routerLink="#"> T&C</a><br />
+      <span>No cost EMI ₹1,667/month. Standard EMI also available</span
+      ><a routerLink="#"> T&C</a><br />
+
+      <!-- implement Product Description and Specification:--------------------------------------------- -->
+      <!-- ----------------------Description------------------------------------------------------------ -->
+      <div class="product-expansion" fxLayout="50%">
+        <app-mobiles-description-detail></app-mobiles-description-detail>
+      </div>
+    </div>
+  </mat-card>
+</div>

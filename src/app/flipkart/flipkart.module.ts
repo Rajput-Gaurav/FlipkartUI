@@ -9,6 +9,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatRadioModule } from "@angular/material/radio";
 import { MatListModule } from "@angular/material/list";
+import { MatExpansionModule } from "@angular/material/expansion";
 
 // import NgbModule for implementing slider:
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
@@ -27,8 +28,9 @@ import { ProductDetailsComponent } from "./product-details/product-details.compo
 import { ProfileComponent } from "./profile/profile.component";
 import { ManageAccountComponent } from "./profile/manage-account/manage-account.component";
 import { UserInformationComponent } from "./profile/user-information/user-information.component";
-import { MobilesComponent } from './product/product-list/mobiles/mobiles.component';
-import { MobilesDetailComponent } from './product-details/mobiles-detail/mobiles-detail.component';
+import { MobilesComponent } from "./product/product-list/mobiles/mobiles.component";
+import { MobilesDetailComponent } from "./product-details/mobiles-detail/mobiles-detail.component";
+import { MobilesDescriptionDetailComponent } from './product-details/mobiles-detail/mobiles-description-detail/mobiles-description-detail.component';
 
 @NgModule({
   imports: [
@@ -44,6 +46,7 @@ import { MobilesDetailComponent } from './product-details/mobiles-detail/mobiles
     NgbModule,
     FlexLayoutModule,
     MatListModule,
+    MatExpansionModule,
   ],
   declarations: [
     SliderComponent,
@@ -57,6 +60,7 @@ import { MobilesDetailComponent } from './product-details/mobiles-detail/mobiles
     UserInformationComponent,
     MobilesComponent,
     MobilesDetailComponent,
+    MobilesDescriptionDetailComponent,
   ],
   // export only one component which is main component:
   exports: [FlipkartComponent],

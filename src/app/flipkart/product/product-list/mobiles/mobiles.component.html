@@ -1,3 +1,30 @@
-<p>
-  mobiles works!
-</p>
+<!-- implement mobiles UI: -->
+<div class="col-xs-4 main-container">
+  <a routerLinkActive="active" class="list-group-item clearfix">
+    <!-- div for image: -->
+    <div
+      class="pull-left"
+      *ngFor="let mobile of mobiles"
+      fxLayout.xs="column"
+      [routerLink]="['/mobiles', mobile.id]"
+    >
+      <!-- use mat-card: -->
+      <mat-card>
+        <div class="img" fxFlex>
+          <img src="{{ mobile.image }}" class="image" />
+        </div>
+        <!-- div for description: -->
+        <div class="disc" fxFlex>
+          <mat-card-title class="list-group-item-heading">
+            {{ mobile.name }}
+          </mat-card-title>
+          <mat-card-subtitle class="list-group-item-text">{{
+            mobile.description
+          }}</mat-card-subtitle>
+          <h6>{{ mobile.price | currency }}</h6>
+          <br />
+        </div>
+      </mat-card>
+    </div>
+  </a>
+</div>

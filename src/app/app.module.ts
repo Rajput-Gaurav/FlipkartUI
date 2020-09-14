@@ -16,6 +16,9 @@ import { MatInputModule } from "@angular/material/input";
 // import flipkart module:
 import { FlipkartModule } from "./flipkart/flipkart.module";
 import { AppRoutingModule } from "./app-routing.module";
+// import HttpClientModule for fetching data through api or server:
+import { HttpClientModule } from "@angular/common/http";
+
 // components:
 import { AppComponent } from "./app.component";
 import { LoginComponent } from "./login/login.component";
@@ -46,6 +49,7 @@ import { FooterThreeComponent } from "./Shared/footer/footer-three/footer-three.
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     FormsModule,
     MatButtonModule,
     MatToolbarModule,

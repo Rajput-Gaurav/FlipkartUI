@@ -14,7 +14,7 @@ const routes: Routes = [
   // { path: "", redirectTo: "/home", pathMatch: "full" }, //redirect too login page:
   { path: "home", component: FlipkartComponent },
   { path: "profile", component: ProfileComponent },
-  { path: "**", component: PageNotFoundComponent },
+  // { path: "**", component: PageNotFoundComponent },
 ];
 @NgModule({
   imports: [CommonModule, RouterModule.forRoot(routes)],

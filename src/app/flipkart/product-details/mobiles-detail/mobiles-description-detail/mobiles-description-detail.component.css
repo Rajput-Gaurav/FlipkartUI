@@ -1,0 +1,40 @@
+/* apply css on header: */
+.main-header {
+  border: 1px solid darkgray;
+  width: 797px;
+  padding: 15px;
+}
+/* apply css on main div class: */
+.main-container {
+  height: 100%;
+}
+/* apply css too the first div: */
+.mobile-design {
+  border: 1px solid darkgray;
+  height: fit-content;
+}
+/* apply css too the second div: */
+.mobile-photos {
+  border: 1px solid darkgray;
+  height: fit-content;
+}
+/* apply css too the third div: */
+.mobile-battery {
+  border: 1px solid darkgray;
+  height: fit-content;
+}
+/* apply css too the fourth div: */
+.mobile-nightMode {
+  border: 1px solid darkgray;
+  height: fit-content;
+}
+/* apply css too the fifth div */
+.mobile-notch {
+  border: 1px solid darkgray;
+  height: fit-content;
+}
+/* apply css too the sixth div: */
+.mobile-lock {
+  border: 1px solid darkgray;
+  height: fit-content;
+}

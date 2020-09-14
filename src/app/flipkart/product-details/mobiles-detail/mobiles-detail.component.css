@@ -1,0 +1,65 @@
+.main-container {
+  width: 100%;
+  height: 100%;
+}
+/* apply css on image: */
+.img-thumbnail {
+  height: 400px;
+  width: 400px;
+}
+/* apply css too the cart button: */
+.cart {
+  margin: 10px;
+  height: 45px;
+  width: 180px;
+  color: white;
+  background-color: orange;
+}
+/* apply css too the buy button: */
+.buy {
+  height: 45px;
+  width: 180px;
+  color: white;
+  background-color: orangered;
+}
+/* apply css too the title: */
+mat-card-title {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+mat-card-subtitle {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+/* apply css too price tag: */
+.price {
+  font-weight: bold;
+}
+/* apply css too the offers class: */
+.offers {
+  font-weight: bold;
+}
+/* apply css too the all span tags: */
+span {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+/* apply css too the expansion material: */
+.expansion {
+  margin-top: 10%;
+}
+/* apply css on image-div class: */
+.img-div {
+  width: 40%;
+  /* position: fixed; */
+}
+/* apply css on description-div class: */
+.description-div {
+  width: 60%;
+}
+.product-expansion {
+  border: 1px solid darkgray;
+  margin-top: 30px;
+}

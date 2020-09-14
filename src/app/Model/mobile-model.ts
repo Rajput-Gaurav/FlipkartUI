@@ -1,8 +1,9 @@
 // create a model class for mobile:
 export class Mobile {
+  public id: number;
   public name: string;
   public description: string;
-  public imagePath: string;
+  public image: string;
   public reviewCounter: number;
   public reviews: string[];
   public price: number;
@@ -12,9 +13,10 @@ export class Mobile {
   public extraImages: string[];
 
   constructor(
+    id: number,
     name: string,
     desc: string,
-    imagepath: string,
+    image: string,
     reviewCounter: number,
     reviews: string[],
     price: number,
@@ -23,9 +25,10 @@ export class Mobile {
     avg: number,
     extraImg: string[]
   ) {
+    this.id = id;
     this.name = name;
     this.description = desc;
-    this.imagePath = imagepath;
+    this.image = image;
     this.reviewCounter = reviewCounter;
     this.reviews = reviews;
     this.price = price;
