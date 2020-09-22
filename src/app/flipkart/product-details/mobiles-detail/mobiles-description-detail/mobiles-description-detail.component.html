@@ -1,64 +1,65 @@
 <h2 class="main-header" fxLayout>Product Description</h2>
+
 <!-- main-div -->
-<div *ngIf="moboDescription" class="main-container" fxLayout="column">
+<div *ngIf="mobile" class="main-container" fxLayout="column">
   <!-- first div> -->
   <div class="mobile-design">
-    <img src="{{ moboDescription.image1 }}" />
+    <img src="{{ mobile.image1 }}" />
     <mat-card-content fxFlex>
-      <mat-card-header>{{ moboDescription.Productname2 }}</mat-card-header>
+      <mat-card-header>{{ mobile.productname2 }}</mat-card-header>
       <mat-card-subtitle style="margin-left: 18px; margin-top: 10px">{{
-        moboDescription.Productdescription2
+        mobile.productdescription2
       }}</mat-card-subtitle>
     </mat-card-content>
   </div>
   <!-- second div -->
   <div class="mobile-photos">
-    <img src="{{ moboDescription.image2 }}" />
+    <img src="{{ mobile.image2 }}" />
     <mat-card-content fxFlex>
-      <mat-card-header>{{ moboDescription.Productname6 }}</mat-card-header>
+      <mat-card-header>{{ mobile.productname6 }}</mat-card-header>
       <mat-card-subtitle style="margin-left: 18px; margin-top: 10px">{{
-        moboDescription.Productdescription6
+        mobile.productdescription6
       }}</mat-card-subtitle>
     </mat-card-content>
   </div>
   <!-- third div -->
   <div class="mobile-battery">
-    <img src="{{ moboDescription.image3 }}" />
+    <img src="{{ mobile.image3 }}" />
     <mat-card-content fxFlex>
-      <mat-card-header>{{ moboDescription.Productname1 }}</mat-card-header>
+      <mat-card-header>{{ mobile.productname1 }}</mat-card-header>
       <mat-card-subtitle style="margin-left: 18px; margin-top: 10px">{{
-        moboDescription.Productdescription1
+        mobile.productdescription1
       }}</mat-card-subtitle>
     </mat-card-content>
   </div>
   <!-- fourth div -->
   <div class="mobile-nightMode">
-    <img src="{{ moboDescription.image4 }}" />
+    <img src="{{ mobile.image4 }}" />
     <mat-card-content fxFlex>
-      <mat-card-header>{{ moboDescription.Productname4 }}</mat-card-header>
+      <mat-card-header>{{ mobile.productname5 }}</mat-card-header>
       <mat-card-subtitle style="margin-left: 18px; margin-top: 10px">{{
-        moboDescription.Productdescription4
+        mobile.productdescription4
       }}</mat-card-subtitle>
     </mat-card-content>
   </div>
   <!-- fifth div -->
   <div class="mobile-notch">
-    <img src="{{ moboDescription.image5 }}" />
+    <img src="{{ mobile.image5 }}" />
     <mat-card-content fxFlex>
-      <mat-card-header>{{ moboDescription.Productname5 }}</mat-card-header>
+      <mat-card-header>{{ mobile.productname4 }}</mat-card-header>
       <mat-card-subtitle style="margin-left: 18px; margin-top: 10px">{{
-        moboDescription.Productdescription5
+        mobile.productdescription5
       }}</mat-card-subtitle>
     </mat-card-content>
   </div>
   <!-- sixth div -->
   <!-- use *ngIf="!null" too check value null or not null: -->
   <div class="mobile-lock">
-    <img src="{{ moboDescription.image6 }}" />
+    <img src="{{ mobile.image6 }}" />
     <mat-card-content fxFlex>
-      <mat-card-header>{{ moboDescription.Productname3 }}</mat-card-header>
+      <mat-card-header>{{ mobile.productname3 }}</mat-card-header>
       <mat-card-subtitle style="margin-left: 18px; margin-top: 10px">{{
-        moboDescription.Productdescription3
+        mobile.productdescription3
       }}</mat-card-subtitle>
     </mat-card-content>
   </div>

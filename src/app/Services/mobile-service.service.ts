@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { Mobile } from "../Model/mobile-model";
-import { MobileDescription } from "../Model/mobileDescription-model";
+// import { MobileDescription } from "../Model/mobileDescription-model";
 import { baseUrl } from "../config/api";
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
@@ -15,7 +15,7 @@ export class MobileServiceService {
 
   // create a variable mobiles too take the data of api:
   mobiles: Mobile[] = [];
-  moboDescription: MobileDescription[] = [];
+  // moboDescription: MobileDescription[] = [];
 
   // inject HttpClient and create an instance:
   constructor(private http: HttpClient) {}
@@ -30,7 +30,7 @@ export class MobileServiceService {
     return this.http.get<Mobile>(this.apiUrl + "/" + id);
   }
   // method too get a single mobile with id and mobile description:
-  getSingleMobileDescription(id: number): Observable<MobileDescription> {
-    return this.http.get<MobileDescription>(this.apiUrl + "/" + id);
-  }
+  // getSingleMobileDescription(id: number): Observable<MobileDescription> {
+  //   return this.http.get<MobileDescription>(this.apiUrl + "/" + id);
+  // }
 }

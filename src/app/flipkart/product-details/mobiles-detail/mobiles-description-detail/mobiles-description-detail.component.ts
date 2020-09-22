@@ -1,6 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-// import data or model class:
-import { MobileDescription } from "../../../../Model/mobileDescription-model";
 // import Activated route for get the id:
 import { ActivatedRoute } from "@angular/router";
 // import MobileService:
@@ -13,8 +11,7 @@ import { Mobile } from "src/app/Model/mobile-model";
   styleUrls: ["./mobiles-description-detail.component.css"],
 })
 export class MobilesDescriptionDetailComponent implements OnInit {
-  // create a variable too take the data coming from api:
-  moboDescription: MobileDescription;
+  mobile: Mobile;
 
   // inject Activated route and MobileService into constructor:
   constructor(
@@ -28,7 +25,7 @@ export class MobilesDescriptionDetailComponent implements OnInit {
     let id = this.route.snapshot.params["id"];
 
     this.mobileService
-      .getSingleMobileDescription(id)
-      .subscribe((moboDescription) => (this.moboDescription = moboDescription));
+      .getSingleMobile(id)
+      .subscribe((mobile) => (this.mobile = mobile));
   }
 }
