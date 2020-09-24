@@ -1,5 +1,6 @@
 <!-- implement mobiles UI: -->
 <div class="col-xs-4 main-container">
+  <!-- use appHighlight Directive too apply styles: -->
   <a routerLinkActive="active" class="list-group-item clearfix">
     <!-- div for image: -->
     <div
@@ -9,7 +10,7 @@
       [routerLink]="['/mobiles', mobile.id]"
     >
       <!-- use mat-card: -->
-      <mat-card>
+      <mat-card appHighlight>
         <div class="img" fxFlex>
           <img src="{{ mobile.image }}" class="image" />
         </div>

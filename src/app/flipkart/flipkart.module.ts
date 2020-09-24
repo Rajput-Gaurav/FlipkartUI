@@ -30,7 +30,10 @@ import { ManageAccountComponent } from "./profile/manage-account/manage-account.
 import { UserInformationComponent } from "./profile/user-information/user-information.component";
 import { MobilesComponent } from "./product/product-list/mobiles/mobiles.component";
 import { MobilesDetailComponent } from "./product-details/mobiles-detail/mobiles-detail.component";
-import { MobilesDescriptionDetailComponent } from './product-details/mobiles-detail/mobiles-description-detail/mobiles-description-detail.component';
+import { MobilesDescriptionDetailComponent } from "./product-details/mobiles-detail/mobiles-description-detail/mobiles-description-detail.component";
+
+// Directives:
+import { HighlightDirective } from "../flipkart/directives/highlight.directive";
 
 @NgModule({
   imports: [
@@ -61,6 +64,7 @@ import { MobilesDescriptionDetailComponent } from './product-details/mobiles-det
     MobilesComponent,
     MobilesDetailComponent,
     MobilesDescriptionDetailComponent,
+    HighlightDirective,
   ],
   // export only one component which is main component:
   exports: [FlipkartComponent],

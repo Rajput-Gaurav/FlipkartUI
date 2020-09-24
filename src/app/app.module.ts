@@ -19,6 +19,8 @@ import { AppRoutingModule } from "./app-routing.module";
 // import HttpClientModule for fetching data through api or server:
 import { HttpClientModule } from "@angular/common/http";
 
+import { FlexLayoutModule } from "@angular/flex-layout";
+
 // components:
 import { AppComponent } from "./app.component";
 import { LoginComponent } from "./login/login.component";
@@ -33,6 +35,10 @@ import { FooterOneComponent } from "./Shared/footer/footer-one/footer-one.compon
 import { FooterTwoComponent } from "./Shared/footer/footer-two/footer-two.component";
 import { FooterThreeComponent } from "./Shared/footer/footer-three/footer-three.component";
 
+// Pipes:
+import { SearchPipe } from "./pipes/search.pipe";
+import { MyUppercasePipe } from "./pipes/my-uppercase.pipe";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +51,8 @@ import { FooterThreeComponent } from "./Shared/footer/footer-three/footer-three.
     FooterOneComponent,
     FooterTwoComponent,
     FooterThreeComponent,
+    SearchPipe,
+    MyUppercasePipe,
   ],
   imports: [
     BrowserModule,
@@ -59,6 +67,7 @@ import { FooterThreeComponent } from "./Shared/footer/footer-three/footer-three.
     FlipkartModule,
     AppRoutingModule,
     NgbModule.forRoot(),
+    FlexLayoutModule,
   ],
   providers: [],
   entryComponents: [LoginComponent, RegisterComponent],

@@ -1,5 +1,5 @@
 <header>
-  <div class="container">
+  <div class="container" fxLayout="column">
     <div class="row">
       <div class="col-md-7">
         <div class="row">
@@ -8,18 +8,24 @@
               <img id="IMAGEFLIP" src="assets/images/flipkart.jpg" alt="" />
             </a>
           </div>
-          <div class="col-md-8">
-            <form>
+          <!-- Implement Search: -->
+          <div class="search">
+            <div class="col-md-8 search-bar" #searchpipe fxFlex>
               <input
                 id="SearchInput"
-                type="search"
+                class="form-control"
+                type="text"
                 placeholder="Search for Products Brands and More"
+                [(ngModel)]="query"
               />
+            </div>
+            <div class="search-btn">
               <button id="searchButton" class="btn" type="submit">
                 Search
               </button>
-            </form>
+            </div>
           </div>
+          <!-- /////////end search//////////// -->
         </div>
       </div>
       <div class="col-md-5">
